@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 7.4vh;
+  background: #252525;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.logo {
+  width: 129px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 84vh;
+  padding-top: 11vh;
+  background: linear-gradient(288deg, #e54979 0%, rgba(240, 81, 130, 0) 100%);
+}
+
+.main-title {
+  width: 28vw;
+  margin-bottom: 5vh;
+  text-align: center;
+  font-size: 51px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+}
+
+.paw {
+  z-index: 1;
+}
+
+.main-dog {
+  position: absolute;
+  bottom: -4px;
+  z-index: 0;
+}
+
+.bath-and-groom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #f4f2f3;
+}
+
+.container-bath {
+  margin-left: 4vw;
+}
+
+.title-bath {
+  margin-bottom: 15px;
+  font-size: 49px;
+  font-weight: 700;
+  color: #000;
+}
+
+.paragraph-bath {
+  width: 23vw;
+  margin-bottom: 5vh;
+  font-size: 27px;
+  font-weight: 400;
+  color: #000;
+}
+
+.call-to-action {
+  width: 14vw;
+  height: 9vh;
+  border-radius: 44px;
+  border: none;
+  background: #3a342f;
+  font-size: 27px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.call-to-action:hover {
+  background: #8c7f74;
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+.about-petshop {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(288deg, #e54979 0%, rgba(240, 81, 130, 0) 100%);
+}
+
+.container-about {
+  margin-right: 4vw;
+}
+
+.title-about {
+  width: 15vw;
+  margin-bottom: 15px;
+  font-size: 49px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.paragraph-about {
+  width: 24vw;
+  margin-bottom: 5vh;
+  font-size: 27px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.button-about {
+  width: 14vw;
+  height: 9vh;
+  border-radius: 44px;
+  border: none;
+  background: #fff;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.button-about:hover {
+  background: #fadfdf;
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 19vh;
+}
+
+.support {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  color: #fd6a9a;
+}
+
+.sponsor-brands {
+  font-size: 39px;
+  font-weight: 700;
+  color: #fd6a9a;
+}
+
+.baseboard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 55vh;
+  padding-left: 6vw;
+  gap: 13vw;
+  background: #eb4a7b;
+}
+
+.info-site-title {
+  margin-bottom: 6vh;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.links:hover {
+  opacity: 0.7;
+  transform: scale(105%);
+}
