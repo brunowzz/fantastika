@@ -21,6 +21,12 @@
 .logo {
   width: 129px;
   height: 35px;
+}
+
+.logo:hover,
+.socials:hover {
+  opacity: 0.5;
+  transform: scale(115%);
   cursor: pointer;
 }
 
@@ -32,11 +38,11 @@
   position: relative;
   min-height: 84vh;
   padding-top: 11vh;
-  background: linear-gradient(288deg, #e54979 0%, rgba(240, 81, 130, 0) 100%);
+  background: #e64979;
 }
 
 .main-title {
-  width: 28vw;
+  width: 34vw;
   margin-bottom: 5vh;
   text-align: center;
   font-size: 51px;
@@ -75,7 +81,7 @@
 }
 
 .paragraph-bath {
-  width: 23vw;
+  width: 35vw;
   margin-bottom: 5vh;
   font-size: 27px;
   font-weight: 400;
@@ -83,8 +89,9 @@
 }
 
 .call-to-action {
-  width: 14vw;
-  height: 9vh;
+  min-width: 15vw;
+  min-height: 9vh;
+  padding: 23px 44px;
   border-radius: 44px;
   border: none;
   background: #3a342f;
@@ -104,7 +111,7 @@
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(288deg, #e54979 0%, rgba(240, 81, 130, 0) 100%);
+  background: #e64979;
 }
 
 .container-about {
@@ -120,7 +127,7 @@
 }
 
 .paragraph-about {
-  width: 24vw;
+  width: 40vw;
   margin-bottom: 5vh;
   font-size: 27px;
   font-weight: 400;
@@ -128,8 +135,9 @@
 }
 
 .button-about {
-  width: 14vw;
-  height: 9vh;
+  min-width: 15vw;
+  min-height: 9vh;
+  padding: 23px 44px;
   border-radius: 44px;
   border: none;
   background: #fff;
@@ -157,6 +165,12 @@
   color: #fd6a9a;
 }
 
+.box-sponsor-brands {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+
 .sponsor-brands {
   font-size: 39px;
   font-weight: 700;
@@ -171,6 +185,11 @@
   padding-left: 6vw;
   gap: 13vw;
   background: #eb4a7b;
+}
+
+.baseboard-logo,
+.baseboard-socials {
+  display: none;
 }
 
 .info-site-title {
@@ -195,4 +214,100 @@
 .links:hover {
   opacity: 0.7;
   transform: scale(105%);
+}
+
+@media (max-width: 979px) {
+  .dog {
+    width: 40vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 820px) {
+  .header {
+    justify-content: space-between;
+    height: 17vh;
+    padding: 0 30px;
+  }
+
+  .logo {
+    width: 38vw;
+  }
+
+  .navbar .instagram,
+  .navbar .youtube {
+    display: none;
+  }
+
+  .main-title {
+    width: 75vw;
+  }
+
+  .container-about {
+    margin: 0 0 0 4vw;
+  }
+
+  .title-bath,
+  .title-about {
+    margin-top: 100px;
+  }
+
+  .paragraph-bath,
+  .paragraph-about {
+    width: 78vw;
+  }
+
+  .call-to-action,
+  .button-about {
+    margin-bottom: 95px;
+  }
+
+  .bath-and-groom .dog {
+    width: 68vw;
+    height: 61vh;
+  }
+
+  .about-petshop .dog {
+    width: 51vw;
+    height: 74vh;
+  }
+
+  .sponsors {
+    flex-direction: column;
+  }
+
+  .box-sponsor-brands {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .baseboard {
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 0;
+    text-align: center;
+  }
+
+  .baseboard-logo,
+  .baseboard-socials {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-title {
+    font-size: 40px;
+  }
+
+  .about-petshop .dog {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .sponsor-brands {
+    font-size: 27px;
+  }
 }
